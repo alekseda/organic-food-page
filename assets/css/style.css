@@ -4,6 +4,7 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container {
@@ -218,4 +219,229 @@
 .lower-banner{
     display: flex;
     justify-content: space-between;
+}
+
+.best {
+    height: 800px;
+    width: 100%;
+}
+
+.best .container {
+    display: flex;
+    padding-top: 3%;
+}
+
+.best-left{
+    width: 55%;
+}
+
+.best-right{
+    width: 45%;
+    height: 550px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-header h1 {
+    font-size:62px ;
+    font-weight:700 ;
+    line-height: 90px;
+}
+
+.best-header p{
+    margin: 30px 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #3f3f3f;
+}
+
+.best-props {
+    width:500px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.best-box {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+} 
+
+.best-props-img{
+    width: 80px;
+    height: 80px;
+    background-color: #F3FBF8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  auto;
+}
+.best-props-img.second {
+    background-color: #FFFFFF;
+}
+
+.best-box.second{
+    background-color: #F3FBF8;
+}
+
+.best-props-img img{
+    width: 40px;
+    height: 40px;
+}
+
+.best-props-info{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.best-props-info h1{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.best-props-info p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.best-ellipse{
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background-color: #09A66D;
+    position: relative;
+    z-index: -5;
+}
+
+.best-rect{
+    width: 422px;
+    height: 38.17px;
+    z-index: -4;
+    position: absolute;
+    background-color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.best-rect.first{
+    transform: rotate(135deg);
+
+}
+
+.best-rect.second{
+    transform: rotate(-135deg);
+}
+
+.grocery-man{
+    position: absolute;
+    width: 371.85px;
+    height: 411.14px;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.grocery-man img{
+    width: 100%;
+    height: 100%;
+}
+
+.items {
+    height: 100vh;
+    width: 100%;
+    background-color: #F3FBF8;
+}
+
+.items .container{
+    padding-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.items-food{
+    width: 47%;
+    height: 600px;
+}
+
+.items-food img{
+    width: 100%;
+    height: 100%;
+}
+
+.items-info{
+    width: 49%;
+}
+
+.items-explore{
+    width: 90%;
+}
+
+.items-info h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 90px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.items-info p{
+    margin: 30px 0;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #565555;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.items-info-low{
+    display: flex;
+    justify-content: space-between;
+}
+
+.low-button{
+    display: flex;
+    width: 35%;
+    padding-top: 3%;
+}
+
+.low-button h1{
+    font-size: 18px;
+    font-weight:500 ;
+    line-height: 30px;
+    width: 60%;
+    margin-top: 7%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.low-button a{
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    background-color: #09A66D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items-low-leaves{
+    width:413.77px ;
+    height: 350.19px;
+    width: 65%;
+}
+
+.items-low-leaves img{
+    width: 100%;
+    height: 100%;
 }
