@@ -14,24 +14,79 @@
     width: 100%;
 }
 
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 28px 0 rgba(0,0,0,.1);
+}
+
 .navigation{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 0;
+    margin: 2% 0;
+
+}
+
+.menu-nav{
+    border: 1px solid;
+    visibility: hidden;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    z-index: 100000;
+    background-color: #ffffff51;
+    box-shadow: -10px 0 10px (0, 0, 0, 0.1);
+    display: none;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+}
+
+.sidebar ul{
+    margin-top: 30px;
+    width: 100%;
+
+}
+.sidebar a{
+    color: black;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.sidebar li:hover{
+    background-color: #f0f0f0;
+}
+
+.sidebar li{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 1s ease;
 }
 
 .left-navigation{
-    width: 374px;
-  
+    width: 33.3%;
+    border: 1px solid;
 }
 
 .left-navigation ul{
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
-    font-weight:400;
-    line-height: 20px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
     
 }
 
@@ -48,12 +103,20 @@
 
 }
 
+.center-navigation{
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .navigation-logo {
     width: 56px;
     height: 56px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid;
     transition: all 1s ease;
 }
 
@@ -69,10 +132,11 @@
 
 .right-navigation{
     display: flex;
-    width:500px;
+    width:33.3%;
     justify-content: flex-end;
     gap: 20px;
     align-items: center;
+    border: 1px solid;
 }
 
 .right-navigation button{
@@ -160,12 +224,12 @@
 }
 
 .right-navigation .register{
-    width: 160px;
+    width: 140px;
     height: 40px;
     background-color: #09A66D;
     border-radius: 8px;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 400;
     line-height: 20px;
     display: flex;
@@ -180,6 +244,7 @@
     width: 100%;
     position: relative;
     z-index: 1;
+    margin-top: 6%;
 }
 
 .banner-info {
@@ -187,7 +252,7 @@
     width: 100%;
 }
 .banner-info h1{
-    font-size: 70px;
+    font-size: 4.4rem;
     font-weight: 700;
     line-height: 90px;
     text-align: center;
@@ -197,7 +262,7 @@
 .banner-info-p{
     padding: 0 280px;
     margin: 30px 0;
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 30px;
     font-weight: 400;
     text-align: center;
@@ -213,7 +278,7 @@
 }
 
 .banner-order p{
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight:500 ;
     line-height: 30px;
     width: 50%;
@@ -307,7 +372,7 @@
 
 .rating-info p{
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 30px;
 }
 
@@ -341,14 +406,14 @@
 }
 
 .best-header h1 {
-    font-size:62px ;
+    font-size:4rem ;
     font-weight:700 ;
     line-height: 90px;
 }
 
 .best-header p{
     margin: 30px 0;
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 30px;
     font-weight: 400;
     color: #3f3f3f;
@@ -496,7 +561,7 @@
 
 .items-info p{
     margin: 30px 0;
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 30px;
     font-weight: 400;
     color: #565555;
@@ -514,7 +579,7 @@
 }
 
 .low-button h1{
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight:500 ;
     line-height: 30px;
     width: 60%;
@@ -559,13 +624,13 @@
 
 .comment-info h1{
     font-weight: 700;
-    font-size: 70px;
+    font-size: 4.4rem;
     line-height: 90px;
 }
 
 .comment-info p{
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 30px;
     color: #3f3f3f;
     padding-right: 10%;
@@ -790,13 +855,13 @@
 
 .app .info h1{
     font-weight: 700;
-    font-size: 62px;
+    font-size: 4rem;
     line-height: 90px;
 }
 
 .app .info p{
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 30px;
     color: #3f3f3f;
     padding-right: 10%;
@@ -845,7 +910,7 @@ footer .container{
 
 footer p{
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.1rem;
     line-height: 30px;
     color: #3f3f3f;
     margin: 25px 0;
@@ -900,4 +965,43 @@ footer .right .third .icons{
     width: 172px;
     height: 24px;
 }
+
+@media  (min-width:998px) and (max-width:1199px) {
+    .container{
+        max-width: 998px;
+        
+    }
+    .banner .banner-info h1{
+        font-size: 3rem;
+    }
+}
+
+@media  (min-width:768px) and (max-width:997px) {
+    .container{
+        max-width: 768px;
+    }
+    .banner .banner-info h1{
+        font-size: 2rem;
+    }
+}
+
+@media  (min-width:480px) and (max-width:767px) {
+    
+}
+
+@media  (min-width:320px) and (max-width:479px) {
+    .container{
+        max-width: 320px;
+    }
+    .left-navigation,
+    .right-navigation{
+        display: none;
+    }
+    .menu-nav{
+        visibility: visible;
+    }
+}
+   /* .navigation-logo{
+        
+    }
 
