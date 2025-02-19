@@ -33,8 +33,19 @@ header{
 }
 
 .menu-nav{
-    border: 1px solid;
+  
     visibility: hidden;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+    
+.menu-nav img, .menu-nav li{
+    width: 100%;
+    height: 100%;
 }
 
 .sidebar{
@@ -76,9 +87,14 @@ header{
     transition: all 1s ease;
 }
 
+.sidebar li:first-child{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .left-navigation{
     width: 33.3%;
-    border: 1px solid;
+ 
 }
 
 .left-navigation ul{
@@ -116,7 +132,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid;
+   
     transition: all 1s ease;
 }
 
@@ -136,7 +152,7 @@ header{
     justify-content: flex-end;
     gap: 20px;
     align-items: center;
-    border: 1px solid;
+ 
 }
 
 .right-navigation button{
@@ -971,8 +987,41 @@ footer .right .third .icons{
         max-width: 998px;
         
     }
+    .banner-order{
+        width: 25%;
+        padding-top: 20px;
+    }
     .banner .banner-info h1{
         font-size: 3rem;
+    }
+    .best .best-header h1{
+        font-size: 3rem;
+        line-height: 30px;
+    }
+    .items-info .items-explore h1, .comment .comment-info h1{
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+    .comment{
+        height: auto;
+    }
+    .items-low-leaves{
+        display: none;
+    }
+    .items .low-button{
+        width: 40%;
+    }
+    .app{
+        height: auto;
+        padding: 50px;
+    }
+    .app .info h1{
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+     .app .info{
+        width: 60%;
+        margin-top: 0;
     }
 }
 
@@ -980,19 +1029,8 @@ footer .right .third .icons{
     .container{
         max-width: 768px;
     }
-    .banner .banner-info h1{
-        font-size: 2rem;
-    }
-}
+    .center-navigation{width: auto;}
 
-@media  (min-width:480px) and (max-width:767px) {
-    
-}
-
-@media  (min-width:320px) and (max-width:479px) {
-    .container{
-        max-width: 320px;
-    }
     .left-navigation,
     .right-navigation{
         display: none;
@@ -1000,8 +1038,284 @@ footer .right .third .icons{
     .menu-nav{
         visibility: visible;
     }
-}
-   /* .navigation-logo{
+    .banner .banner-info h1 {
+        font-size: 2.5rem;
+    }
+    .banner-order{
+        width: 25%;
+        padding-top: 20px;
+    }
+    .best .best-header h1{
+        font-size: 2.5rem;
+        line-height: 30px;
+    }
+    .best .best-props{
+      width: 750px;
+    }
+    
+    .items{
+        padding: 40px;
+        height: auto;
+    }
+    .items .container{
+        padding: 0;
+    }
+    .items-low-leaves{
+        display: none;
+    }
+    .items .low-button{
+        width: 60%;
+    }
+    .items-info .items-explore h1, .comment .comment-info h1{
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+    .commentator h2{
+        font-size: 2rem;
+    }
+    .comment-right .ellipse{
+        width: 400px;
+        height: 400px;
+    }
+    .commentator .directions{
+        width: 50%;
+    }
+    .items-food, .items-info{
+        width: 48%;
+        height: 50%;
+        margin-top: 0;
+    }
+    .banner-info-p{
+        padding: 0;
+        width: 60%;
+        margin: auto;
+    }
+    .best .best-right{
+        display: none;
+    }
+    .app .info h1{
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+     .app .info{
+        width: 50%;
+        height: 50%;
+        margin-top: 0;
+    }
+    .ratings{
+        padding: 15px;
         
     }
+    .rating-info h1{
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    .rating-info p{
+        font-size: 1rem;
+        line-height: 25px;
+    }
+}
+
+@media  (min-width:480px) and (max-width:767px) {
+    .container{
+        max-width: 480px;
+    }
+    .center-navigation{width: auto;}
+
+    .left-navigation,
+    .right-navigation{
+        display: none;
+    }
+    .menu-nav{
+        visibility: visible;
+    }
+
+    .banner{
+        margin-top: 70px;
+    }
+    .banner .banner-info h1{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+    .banner-info-p{
+        padding: 0;
+    }
+
+    .banner-order{
+        width: 70%;
+    }
+    .ratings{
+        padding: 15px;
+        width: 90%;
+        margin: auto;
+    }
+    .rating-info h1{
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    .rating-info p{
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    .items{
+        padding: 70px;
+    }
+
+    .items .items-explore h1{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+
+    .items .container{
+        flex-direction: column;
+    }
+    .items-food, .items-info{
+        width: 100%;
+        height: auto;
+    }
+    .banner .leaves, .vegetables-basket, .items-low-leaves{
+        display: none;
+    }
+    .best, .comment, .app{
+        display: none;
+    }
+    .items, footer{
+        height: auto;
+    }
+    .items .low-button{
+        width: 70%;
+    }
+
+    footer{
+        padding: 60px;
+    }
+    footer .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer .right{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer .left, .right, footer .right .first,footer .right .second, footer .right .third{
+        width: 100%;
+    }
+
+    
+
+    footer .right p{
+        line-height: 20px;
+        margin: 20px 0;
+    }
+
+    /* .center-navigation{width: auto;}
+
+    .left-navigation,
+    .right-navigation{
+        display: none;
+    }
+    .menu-nav{
+        visibility: visible;
+    } */
+}
+
+@media  (min-width:320px) and (max-width:479px) {
+    .container{
+        max-width: 320px;
+    }
+
+    .center-navigation{width: auto;}
+
+    .left-navigation,
+    .right-navigation{
+        display: none;
+    }
+    .menu-nav{
+        visibility: visible;
+    }
+
+    .banner{
+        margin-top: 70px;
+    }
+    .banner .banner-info h1{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+    .banner-info-p{
+        padding: 0;
+    }
+
+    .banner-order{
+        width: 70%;
+    }
+    .ratings{
+        padding: 15px;
+        width: 250px;
+        margin: auto;
+    }
+    .rating-info h1{
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    .rating-info p{
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    .items{
+        padding: 70px;
+    }
+
+    .items .items-explore h1{
+        font-size: 2rem;
+        line-height: 50px;
+    }
+
+    .items .container{
+        flex-direction: column;
+    }
+    .items-food, .items-info{
+        width: 100%;
+        height: auto;
+    }
+    .banner .leaves, .vegetables-basket, .items-low-leaves{
+        display: none;
+    }
+    .best, .comment, .app{
+        display: none;
+    }
+    .items, footer{
+        height: auto;
+    }
+    .items .low-button{
+        width: 70%;
+    }
+
+    footer{
+        padding: 60px;
+    }
+    footer .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer .right{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer .left, .right, footer .right .first,footer .right .second, footer .right .third{
+        width: 100%;
+    }
+
+    
+
+    footer .right p{
+        line-height: 20px;
+        margin: 20px 0;
+    }
+}
 

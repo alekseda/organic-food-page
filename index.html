@@ -42,11 +42,12 @@
                     </div>
                 </div>
                 <div class="menu-nav">
-                    <li><a href="#"><img src="/assets/images/menu.svg" alt="menu"></a></li>
+                    <li onclick=showSidebar() ><a href="#"><img src="/assets/images/menu.svg" alt="menu"></a></li>
                 </div>
             </div>
                 <div class="sidebar">
                     <ul>
+                        <li onclick=hideSidebar()><a href="index.html"><img src="/assets/images/close.svg" alt="close"></a></li>
                         <li><a href="index.html">About Us</a></li>
                         <li><a href="index.html">Service</a></li>
                         <li><a href="index.html">Menu</a></li>
@@ -336,6 +337,18 @@
             </div>
         </div>
     </footer>
+
+<script>
+    function showSidebar(){
+        const Sidebar = document.querySelector('.sidebar')
+        Sidebar.style.display = 'flex'    
+    }
+    function hideSidebar(){
+        const Sidebar = document.querySelector('.sidebar')
+        Sidebar.style.display = 'none'    
+    }
+</script>
 </body>
 
 </html>
+
